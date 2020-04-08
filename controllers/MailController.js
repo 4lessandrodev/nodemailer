@@ -2,12 +2,15 @@
 const nodemailer = require('nodemailer');
 
 const transport = {
-  //Credenciais utilizadas do email fake da https://nodemailer.com/about/
+  //Credenciais utilizadas do email fake de https://mailtrap.io o email não é enviado, apenas cria o status 200 e fica 
+  //na caixa de saida da mailtrap, onde pode ser consultado na conta do usuário
   host:'smtp.mailtrap.io',
   port: 2525,
   //Pode substituir as informaçõe de host e port pela tag service: 'gmail',
   //service:'gmail',
   auth: {
+    //Credenciais https://mailtrap.io/inboxes/
+    //SMTP Settings
     user:'87bc185f1c2537',
     pass: 'b6488cccddccb1'
   }
